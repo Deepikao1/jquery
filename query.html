@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <p>JQUERY</p>
+      <p>Click me</p>
+      <p>Click me too</p>
+    </div>
+  </body>
+  <script>
+    // $->dom -documentobjectmodel
+    // selector -> tag or class name or id
+    // document.getElementById("id")
+    // $("h1");
+    // $(selector).action;
+
+    // $(document).ready(() => {
+    //   $("h1").click(() => {
+    //     const value = $("h1").html();
+    //     console.log(value);
+    //   });
+    // });
+
+    $(document).ready(() => {
+      $("p").click(function () {
+        console.log(this);
+        $(this).hide();
+      });
+    });
+  </script>
+</html>

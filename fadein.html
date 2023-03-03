@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Document</title>
+
+    <style>
+      div {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click here</button>
+    <br />
+    <div
+      class="div1"
+      style="height: 80px; width: 80px; background-color: red"
+    ></div>
+    <br />
+    <div
+      class="div2"
+      style="height: 80px; width: 80px; background-color: red"
+    ></div>
+    <br />
+    <div
+      class="div3"
+      style="height: 80px; width: 80px; background-color: red"
+    ></div>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $("button").click(() => {
+        $(".div1").fadeTo(1000, 0.9);
+        $(".div2").fadeIn(4000);
+        $(".div3").fadeIn(6000);
+      });
+    });
+  </script>
+</html>
